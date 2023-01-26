@@ -1,0 +1,2 @@
+# fake-invest-frontend
+FakeInvest
