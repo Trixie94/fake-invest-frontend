@@ -1,0 +1,8 @@
+<section class="top-nav">
+  <div class="burger burger-rotate" (click)="burgerMenuOpen = !burgerMenuOpen" [ngClass]="burgerMenuOpen ? 'open' : ''">
+    <div class="burger-lines"></div>
+  </div>
+  <ul class="menu" [ngClass]="burgerMenuOpen ? 'open' : ''">
+    <li>Characters</li>
+  </ul>
+</section>
