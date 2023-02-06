@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BaseComponent } from '../shared/components/base/base.component';
 
 @Component({
-	selector: 'app-core',
+	selector: 'fake-invest-frontend-core',
 	templateUrl: './core.component.html',
 	styleUrls: ['./core.component.scss'],
 })

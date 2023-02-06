@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'site-dnd-notepad-root',
+	selector: 'fake-invest-frontend-root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-	title = 'site-dnd-notepad';
+	title = 'fake-invest-frontend';
 }
