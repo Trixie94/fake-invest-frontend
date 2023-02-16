@@ -1,5 +1,7 @@
 .top-nav {
-  width: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu {
@@ -7,10 +9,14 @@
   color: black;
   height: 100vh;
   width: 200px;
+  background-color: white;
 }
 
 .menu.open {
   display: block;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
 }
 
 .burger {
@@ -110,4 +116,20 @@
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+.empty-space {
+  width: 300px;
+}
+
+.login {
+  min-width: 50px;
+}
+
+.profile {
+}
+
+.home {
+  max-width: 40px;
+  max-height: 40px;
 }
