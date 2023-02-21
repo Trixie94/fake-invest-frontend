@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector: 'fake-invest-frontend-header',
@@ -7,4 +7,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent {
 	public burgerMenuOpen = false;
+  public isLoggedIn = false;
 }

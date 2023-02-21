@@ -2,7 +2,15 @@
   <div class="burger burger-rotate" (click)="burgerMenuOpen = !burgerMenuOpen" [ngClass]="burgerMenuOpen ? 'open' : ''">
     <div class="burger-lines"></div>
   </div>
+  <div class="empty-space">
+    TO DO
+  </div>
+  <div class="login">
+    <button class="button icon" [ngClass]="isLoggedIn ? 'home' : 'profile'" (click)="isLoggedIn = !isLoggedIn">
+      <img class="icon home" src="assets/icons/home2.svg" alt="Login">
+    </button>
+  </div>
   <ul class="menu" [ngClass]="burgerMenuOpen ? 'open' : ''">
-    <li>Characters</li>
+    <li>Stock</li>
   </ul>
 </section>
