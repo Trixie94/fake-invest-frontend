@@ -1,5 +1,5 @@
 <section class="top-nav">
-  <div class="burger burger-rotate" (click)="burgerMenuOpen = !burgerMenuOpen" [ngClass]="burgerMenuOpen ? 'open' : ''">
+  <div class="burger burger-rotate" (click)="expandedMenu.burgerMenu = !expandedMenu.burgerMenu" [ngClass]="expandedMenu.burgerMenu ? 'open' : ''">
     <div class="burger-lines"></div>
   </div>
   <div class="empty-space">
@@ -10,7 +10,38 @@
       <img class="icon home" src="assets/icons/home2.svg" alt="Login">
     </button>
   </div>
-  <ul class="menu" [ngClass]="burgerMenuOpen ? 'open' : ''">
-    <li>Stock</li>
+  <ul class="menu" [ngClass]="expandedMenu.burgerMenu ? 'open' : ''">
+    <button class="button dashboard expandable-menu" (click)="toggleMenu(mainMenuItemsToggleNames.Dashboard)">
+      Dashboard
+    </button>
+    <div [ngClass]="expandedMenu.dashboardMenu ? 'expanded-menu-open' : 'expanded-menu-closed'">
+      <ul>Recent</ul>
+      <ul>Changes</ul>
+      <ul>History</ul>
+    </div>
+    <button class="button stock expandable-menu" (click)="toggleMenu(mainMenuItemsToggleNames.Stocks)">
+      Stocks
+    </button>
+    <div [ngClass]="expandedMenu.stocksMenu ? 'expanded-menu-open' : 'expanded-menu-closed'">
+      <ul>Invest</ul>
+      <ul>Wallet</ul>
+      <ul>History</ul>
+    </div>
+    <button class="button bets expandable-menu" (click)="toggleMenu(mainMenuItemsToggleNames.Bets)">
+      Bets
+    </button>
+    <div [ngClass]="expandedMenu.betsMenu ? 'expanded-menu-open' : 'expanded-menu-closed'">
+      <ul>Bet</ul>
+      <ul>Wallet</ul>
+      <ul>History</ul>
+    </div>
+    <button class="button cryptocurrencies expandable-menu" (click)="toggleMenu(mainMenuItemsToggleNames.Cryptocurrencies)">
+      Cryptocurrencies
+    </button>
+    <div [ngClass]="expandedMenu.cryptocurrenciesMenu ? 'expanded-menu-open' : 'expanded-menu-closed'">
+      <ul>Buy</ul>
+      <ul>Sell</ul>
+      <ul>History</ul>
+    </div>
   </ul>
 </section>
